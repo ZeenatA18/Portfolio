@@ -342,11 +342,15 @@ html{
 #intro p {
     padding: 10px;
 }
+
+.flex{
+    padding-right: 20px;
+}
+
 .flex img{
     padding-top: 20px;
     padding-right: 10px;
 }
-
 
 .flex p{
     width: 350px;
