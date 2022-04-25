@@ -1,4 +1,5 @@
 *{
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -149,34 +150,42 @@ html{
 
 .gallery{
  display: flex;
+
    
 } 
 
 .gallery img{
     width: 200px;
-    height: 200px;
-    padding-left: 20px
+  
 }
-
+.flex{
+    margin-left: auto; 
+    margin-right: 10px;
+    
+}
 .flex p{
     /* float: right; */
     width: 450px;
     padding: 20px;
 }
-
+.flex1{
+    margin-left: 50px;
+    margin-right: auto;
+}
 .flex img{
     float:right;
 
 }
 .flex1 p{
     /* float: right; */
-    width: 250px;
-  padding-left: 50px;
+    width: 350px;
+ 
 }
 
-.flex1{
-    display: flex;
-    flex-direction:row-reverse
+.flex1 img{
+    float:right;
+  
+   
 }
 
 /* Contact section */
@@ -220,7 +229,7 @@ html{
     box-shadow: 0 0 10px white;
 }
 
-@media screen and (max-width:960px) {
+@media screen and (max-width:689px) {
   /* Home */
   #home{
     height: 250px;
@@ -270,6 +279,31 @@ html{
     #send{
         width: 20%;
     }
+    .flex{
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .flex img{
+        width:90px;
+        padding-top: 20px;
+    }
+    .flex p{
+        width: 250px;
+    }
+    .flex1{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+    }
+    .flex1 img{
+        width:100px;
+        height: 100px;
+    }
+
+    .flex1 p{
+        width: 300px;
+        
+    }
 }
 
 @media screen and (max-width:688px) {
@@ -295,7 +329,8 @@ html{
 }
 
 .gallery{
-    flex-direction: column;
+    display: flex;
+  flex-direction: column;
 }
 
 .gallery img{
@@ -307,16 +342,18 @@ html{
 #intro p {
     padding: 10px;
 }
+.flex img{
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
 
 .flex p{
-    width: 500px;
-    padding: 30px;
+    width: 350px;
 }
 
-.flex1 p{
-    width: 500px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-}
 
+.flex1 img{
+    float: right;
+}
 }
