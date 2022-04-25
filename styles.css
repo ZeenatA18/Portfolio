@@ -105,7 +105,6 @@ html{
 #pic img{
     width: 575px;
     height: 400px;
-    padding-left: 50px;
 }
 
 #intro{
@@ -154,23 +153,31 @@ html{
 } 
 
 .gallery img{
-    width: 300px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     padding-left: 20px
 }
 
 .flex p{
-    float: right;
-    width: 350px;
-    padding: 20px
+    /* float: right; */
+    width: 450px;
+    padding: 20px;
 }
 
+.flex img{
+    float:right;
+
+}
 .flex1 p{
-    float: right;
-    width: 350px;
-    padding: 20px
+    /* float: right; */
+    width: 250px;
+  padding-left: 50px;
 }
 
+.flex1{
+    display: flex;
+    flex-direction:row-reverse
+}
 
 /* Contact section */
 #contact{
@@ -238,6 +245,7 @@ html{
     #pic img{
         width: 475px;
         height: 300px;
+        /* padding-left: 50px; */
     }
 
     #intro h2{
@@ -279,12 +287,36 @@ html{
     padding: 5px 10px;
 }
        
-    /* About Section */
+    
 
 #pic img{
-    width: 200px;
+    width: 220px;
     height: 200px;
 }
 
+.gallery{
+    flex-direction: column;
+}
+
+.gallery img{
+    padding-left: 50px;
+    padding-top: 0px;
+    padding: 10px;
+}
+
+#intro p {
+    padding: 10px;
+}
+
+.flex p{
+    width: 500px;
+    padding: 30px;
+}
+
+.flex1 p{
+    width: 500px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
 
 }
