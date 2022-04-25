@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('DSCN0292.JPG') no-repeat center/cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    right: 10%;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: white;
+}
+
+
+
+/* About section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 500px;
+}
+
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: black;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+    padding-left: 50px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#intro p{
+    padding: 30px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    font-weight: bold;
+}
+
+/* Portfolio section */
+#portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+ display: flex;
+   
+} 
+
+.gallery img{
+    width: 300px;
+    height: 220px;
+    padding-left: 20px
+}
+
+.flex p{
+    float: right;
+    width: 350px;
+    padding: 20px
+}
+
+.flex1 p{
+    float: right;
+    width: 350px;
+    padding: 20px
+}
+
+
+/* Contact section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+}
+
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+}
+
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 30px;
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+@media screen and (max-width:960px) {
+  /* Home */
+  #home{
+    height: 250px;
+  }
+
+  #home::before{
+      height: 820px;
+  }
+  
+    /* Navbar */
+   .navbar ul{
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   
+    /* About Section */
+    #pic{
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    #pic img{
+        width: 475px;
+        height: 300px;
+    }
+
+    #intro h2{
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Portfolio Section */
+
+    #gallery{
+        display: flex;
+        
+    }
+
+    /* Contact Section*/
+    .input{
+        width: 60%;
+    }
+    #msg{
+        width: 50%;
+    }
+    #send{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:688px) {
+   /* Navbar */
+   .navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+
+.navbar ul li{
+    font-size: small;
+}
+
+.navbar ul li a{
+    padding: 5px 10px;
+}
+       
+    /* About Section */
+
+#pic img{
+    width: 200px;
+    height: 200px;
+}
+
+
+}
